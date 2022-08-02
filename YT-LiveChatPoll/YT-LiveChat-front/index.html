@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YT Poll</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <h1 class="navbar-text">Youtube Live Poll</h1>
+        </div>
+    </nav>
+    <div id="showError">
+    </div>
+
+    <br>
+    
+    <br>
+    <div class="container">
+        
+        <form id="form">
+            <div class="row">
+                <div class="col-sm-8 col-md-8 col-lg-8">
+
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="searchQuery" placeholder="Search by Video Title">
+                        <label for="floatingInput">Search by Video Title</label>
+                    </div>
+                    <br>
+                    <div class="form-floating">
+                        <select class="form-select" id="filterOption" aria-label="Floating label select example">
+                            <option selected>Filter</option>
+                            <option value="noFilter">No Filter</option>
+                            <option value="chessMoves">Chess Moves</option>
+                            <option value="givenKeywords">Enter Keywords</option>
+                        </select>
+                        <label for="floatingSelect">Filter</label>
+                    </div>
+                    <br>
+                    <div id="KeywordList" class="col-sm-4 col-md-4 col-lg-4">
+
+                    </div>
+                    <br>
+                    <button type="button" id="connectBtn" class="btn btn-dark">Connect</button>
+                    <button type="button" id="disconnectBtn" class="btn btn-dark">Disconnect</button>
+                    <br>
+                    <br>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                             aria-controls="collapseOne">
+                                <code><u>Instructions-</u></code>
+                            </button>
+                        </h2>
+                        <br>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>Enter the Youtube live stream video title in "Search by Video title" field.
+                                    </li>
+                                    <li>
+                                        Select Filter using the dropdown-
+                                        <ul>
+                                            <li>No Filter : All the live chat messages written by all the users are included in poll
+                                                result.</li>
+                
+                                            <li>Chess Moves : Filter out only the live messages containing valid chess moves.(Ex- kb4, Bc2, a2 etc)</li>
+                
+                                            <li>Enter Keywords : Users can enter upto 10 keywords. Chat messages are filtered using the
+                                                given keywords. Only the entered keywords will be displayed in poll results.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1">
+
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <center>
+                        <h3>Solve a Chess Puzzle</h3>
+                    </center>
+                    <iframe src="https://livetactics.chessbase.com" width="250" height="350"></iframe>
+                </div>
+            </div>
+
+
+        </form>
+        <br>
+        <div class="row">
+            <div class="col-sm-8 col-md-8 col-lg-8" id="chart">
+                <div class="chart-container" style="height: 800px">
+                    <canvas id="myChart" style="width:100%;max-width:800px"></canvas>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+    integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js\index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
