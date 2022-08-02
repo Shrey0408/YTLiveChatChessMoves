@@ -1,12 +1,18 @@
 # YTLiveChatChessMoves
+
 -> Developed to get response from audience where they can answer next best move in a chess game asked by chess live YT streamers.
+
 -> Streamers can see the poll resilt of how many users has suggested which chess move and also find out who were the first people to answer correctly.
+
 -> Many times live streamers want to interact with their audiences. To get overall response they can use this poll to check how users are responding.
+
 -> Real Time Youtube live chat poll for chess Moves or by given filter
+
 -> Completely serverless architectecture using AWS Lambda and AWS API Gateway.
+
 -> Youtube Data API used to extract live chat messages and Websocket for real time polling.
 
-#Instructions to get poll from Live chat messages of Youtube live Streams : 
+# Instructions to get poll from Live chat messages of Youtube live Streams : 
 
 1. Enter the Youtube live stream video title in "Search by Video title" field.
 2. Select Filter using the dropdown-
