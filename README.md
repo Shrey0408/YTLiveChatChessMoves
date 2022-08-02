@@ -14,9 +14,13 @@
 # Instructions to get poll from Live chat messages of Youtube live Streams : 
 
 1. Enter the Youtube live stream video title in "Search by Video title" field.
+
 2. Select Filter using the dropdown-
+
    No Filter :  All the live chat messages written by all the users are included in poll result.
+   
    Chess Moves : Filter out only the live messages including valid chess moves written using valid chess notations.(Ex- kb4, Bc2, a2 etc)
+   
    Enter Keywords : Users can enter upto 10 keywords. Chat messages are filtered using the given keywords. Only the entered keywords will be displayed in poll results.  
    
    
